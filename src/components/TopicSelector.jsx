@@ -9,7 +9,9 @@ export default function TopicSelector({ topics, onSelectTopic }) {
         </div>
 
         {/* Topic Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        {/* [BUG - LAYOUT] grid-cols-1 md:grid-cols-2 changed to grid-cols-5 breaks responsive layout - too many columns */}
+        {/* [FIX] Change 'grid-cols-5' back to 'grid-cols-1 md:grid-cols-2' for proper layout */}
+        <div className="grid grid-cols-5 gap-6 mb-8">
           {topics.map((topic, index) => (
             <button
               key={index}

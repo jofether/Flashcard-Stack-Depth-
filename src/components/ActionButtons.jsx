@@ -1,6 +1,8 @@
 export default function ActionButtons({ onIncorrect, onMark, onCorrect, isMarked }) {
+  // [BUG - LAYOUT] flex-col stacks buttons vertically instead of horizontally
+  // [FIX] Change 'flex-col' to 'flex-row' or remove flex-col entirely
   return (
-    <div className="flex gap-6">
+    <div className="flex flex-col gap-6">
       <button
         onClick={onIncorrect}
         className="w-20 h-20 rounded-full bg-red-100 text-red-600 flex items-center justify-center text-3xl shadow-lg hover:bg-red-200 hover:shadow-xl transition transform hover:scale-110 active:scale-95"
@@ -21,7 +23,9 @@ export default function ActionButtons({ onIncorrect, onMark, onCorrect, isMarked
       </button>
       <button
         onClick={onCorrect}
-        className="w-20 h-20 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-3xl shadow-lg hover:bg-green-200 hover:shadow-xl transition transform hover:scale-110 active:scale-95"
+        // [BUG - SPACING] Negative margin -mt-16 causes overlap with previous button
+        // [FIX] Remove -mt-16, use default spacing or mt-0
+        className="w-20 h-20 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-3xl shadow-lg hover:bg-green-200 hover:shadow-xl transition transform hover:scale-110 active:scale-95 -mt-16"
         title="Mark as correct"
       >
         ✓

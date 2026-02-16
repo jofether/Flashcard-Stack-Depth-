@@ -12,7 +12,9 @@ export default function ResultsScreen({ stats, markedCount, onReset, topicName }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-800 to-emerald-900 flex flex-col items-center justify-center font-sans overflow-hidden p-4">
-      <div className="bg-white rounded-3xl shadow-2xl p-10 max-w-lg w-full mx-4">
+      {/* [BUG - LAYERS] Absolute positioning without proper top/left makes modal disappear off-screen */}
+      {/* [FIX] Remove 'absolute -top-64' or change to 'relative' with proper positioning */}
+      <div className="bg-white rounded-3xl shadow-2xl p-10 max-w-lg w-full mx-4 absolute -top-64">
         <div className="text-center mb-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-2">Study Complete!</h2>
           <p className="text-emerald-600 font-semibold">{topicName}</p>
@@ -51,9 +53,11 @@ export default function ResultsScreen({ stats, markedCount, onReset, topicName }
           </div>
 
           {/* Additional Info */}
+          {/* [BUG - COLOR_CONTRAST] White text on white background makes content invisible */}
+          {/* [FIX] Change 'text-white' to 'text-blue-900' or similar dark color */}
           <div className="bg-blue-50 rounded-xl p-4 border-l-4 border-blue-500">
-            <p className="text-blue-900 font-semibold text-sm">Total cards reviewed: <span className="text-blue-600 font-bold">{total}</span></p>
-            <p className="text-blue-800 text-xs mt-2">Keep practicing to master these topics!</p>
+            <p className="text-white font-semibold text-sm">Total cards reviewed: <span className="text-white font-bold">{total}</span></p>
+            <p className="text-white text-xs mt-2">Keep practicing to master these topics!</p>
           </div>
         </div>
 

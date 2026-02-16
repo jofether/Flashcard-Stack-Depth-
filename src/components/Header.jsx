@@ -2,8 +2,14 @@ export default function Header({ title, subtitle, currentIndex, totalCards, prog
   return (
     <div className="w-full max-w-2xl mb-8">
       <div className="text-center mb-4">
-        <h1 className="text-white text-5xl font-bold mb-2 tracking-tight">{title}</h1>
-        <p className="text-emerald-200 text-base">{subtitle}</p>
+        {/* [BUG - TYPO] 'from-emerald-8' is not a valid Tailwind color - should be 'from-emerald-800' */}
+        {/* [FIX] Change 'from-emerald-8' to 'from-emerald-800' */}
+        <h1 className="text-white text-5xl font-bold mb-2 tracking-tight from-emerald-8">
+          {title}
+        </h1>
+        {/* [BUG - COLOR_CONTRAST] Subtitle is nearly invisible - same color text and background */}
+        {/* [FIX] Change second text-emerald-200 to text-white or text-emerald-50 for visibility */}
+        <p className="text-emerald-200 text-base text-emerald-200">{subtitle}</p>
       </div>
       
       {/* Progress Bar */}
