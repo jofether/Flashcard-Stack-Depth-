@@ -2,8 +2,6 @@ export default function FlashcardCard({ card, isFlipped, onFlip, onMark, isMarke
   return (
     <div className="relative w-80 h-96 mb-8">
       {/* Card 3 (Bottom) */}
-      {/* [BUG - LAYERS] z-index causes stacking order to be inverted - cards appear upside down */}
-      {/* [FIX] Remove z-50 from this element, or set z-0 instead */}
       <div className="absolute inset-0 bg-white rounded-2xl shadow-xl transform rotate-6 translate-x-4 border border-gray-200 flex items-center justify-center z-50">
         <span className="text-gray-300 font-bold text-6xl opacity-20">3</span>
       </div>
@@ -16,8 +14,6 @@ export default function FlashcardCard({ card, isFlipped, onFlip, onMark, isMarke
       {/* Card 1 (Top/Active) */}
       <div
         onClick={onFlip}
-        // [BUG - SPACING] Negative margin causes card to overlap with other UI elements
-        // [FIX] Remove -mb-12, change to mb-8 or similar positive value
         className="absolute inset-0 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-between transform transition-all duration-500 hover:shadow-3xl cursor-pointer z-10 hover:scale-105 border border-gray-100 -mb-12"
         style={{
           transformStyle: 'preserve-3d',
