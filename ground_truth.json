@@ -2,6 +2,7 @@
   "repository": "Flashcard Stack (Depth)",
   "bugs": [
     {
+      "comment": "Bug #1 - flexbox",
       "bug_category": "Layout",
       "bug_type": "flexbox",
       "file_modified": "src/components/ActionButtons.jsx",
@@ -10,13 +11,14 @@
       "buggy_code": "<div className=\"flex flex-col gap-6\">",
       "css_selector": ".flex",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 304,
+        "y": 194,
+        "width": 672,
+        "height": 368
       }
     },
     {
+      "comment": "Bug #2 - margin-top",
       "bug_category": "Spacing",
       "bug_type": "margin-top",
       "file_modified": "src/components/ActionButtons.jsx",
@@ -25,13 +27,14 @@
       "buggy_code": "className=\"w-20 h-20 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-3xl shadow-lg hover:bg-green-200 hover:shadow-xl transition transform hover:scale-110 active:scale-95 -mt-16\"",
       "css_selector": ".hover:scale-110",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 600,
+        "y": 792,
+        "width": 80,
+        "height": 80
       }
     },
     {
+      "comment": "Bug #3 - z-index",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/components/FlashcardCard.jsx",
@@ -40,13 +43,14 @@
       "buggy_code": "<div className=\"absolute inset-0 bg-white rounded-2xl shadow-xl transform rotate-6 translate-x-4 border border-gray-200 flex items-center justify-center z-50\">",
       "css_selector": ".rotate-6",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 477,
+        "y": 216,
+        "width": 358,
+        "height": 415
       }
     },
     {
+      "comment": "Bug #4 - margin-bottom",
       "bug_category": "Spacing",
       "bug_type": "margin-bottom",
       "file_modified": "src/components/FlashcardCard.jsx",
@@ -55,13 +59,14 @@
       "buggy_code": "className=\"absolute inset-0 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-between transform transition-all duration-500 hover:shadow-3xl cursor-pointer z-10 hover:scale-105 border border-gray-100 -mb-12\"",
       "css_selector": ".hover:scale-105",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 480,
+        "y": 232,
+        "width": 320,
+        "height": 432
       }
     },
     {
+      "comment": "Bug #5 - from-emerald-8",
       "bug_category": "Color",
       "bug_type": "from-emerald-8",
       "file_modified": "src/components/Header.jsx",
@@ -70,13 +75,14 @@
       "buggy_code": "<h1 className=\"text-white text-5xl font-bold mb-2 tracking-tight from-emerald-8\">",
       "css_selector": "h1",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 304,
+        "y": 58,
+        "width": 672,
+        "height": 48
       }
     },
     {
+      "comment": "Bug #6 - positioning",
       "bug_category": "Layout",
       "bug_type": "positioning",
       "file_modified": "src/components/ResultsScreen.jsx",
@@ -85,13 +91,14 @@
       "buggy_code": "<div className=\"bg-white rounded-3xl shadow-2xl p-10 max-w-lg w-full mx-4 absolute -top-64\">",
       "css_selector": ".shadow-2xl",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 480,
+        "y": 232,
+        "width": 320,
+        "height": 432
       }
     },
     {
+      "comment": "Bug #7 - text-white",
       "bug_category": "Color",
       "bug_type": "text-white",
       "file_modified": "src/components/ResultsScreen.jsx",
@@ -100,13 +107,14 @@
       "buggy_code": "<p className=\"text-white font-semibold text-sm\">Total cards reviewed: <span className=\"text-white font-bold\">{total}</span></p>",
       "css_selector": ".text-blue-900",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 444,
+        "y": 223,
+        "width": 396,
+        "height": 20
       }
     },
     {
+      "comment": "Bug #8 - text-white",
       "bug_category": "Color",
       "bug_type": "text-white",
       "file_modified": "src/components/ResultsScreen.jsx",
@@ -115,13 +123,14 @@
       "buggy_code": "<p className=\"text-white text-xs mt-2\">Keep practicing to master these topics!</p>",
       "css_selector": ".text-blue-800",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 444,
+        "y": 251,
+        "width": 396,
+        "height": 16
       }
     },
     {
+      "comment": "Bug #9 - text-4xll",
       "bug_category": "Typo",
       "bug_type": "text-4xll",
       "file_modified": "src/components/StatsPanel.jsx",
@@ -130,13 +139,14 @@
       "buggy_code": "<p className=\"text-4xll font-bold text-green-400 mb-1\">{correct}</p>",
       "css_selector": ".text-4xll",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 500,
+        "y": 912,
+        "width": 46,
+        "height": 24
       }
     },
     {
+      "comment": "Bug #10 - grid",
       "bug_category": "Layout",
       "bug_type": "grid",
       "file_modified": "src/components/TopicSelector.jsx",
@@ -145,10 +155,10 @@
       "buggy_code": "<div className=\"grid grid-cols-5 gap-6 mb-8\">",
       "css_selector": ".grid-cols-1",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 304,
+        "y": 194,
+        "width": 672,
+        "height": 368
       }
     }
   ]
