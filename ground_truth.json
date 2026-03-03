@@ -9,10 +9,10 @@
       "line_number": 3,
       "clean_code": "<div className=\"flex gap-6\">",
       "buggy_code": "<div className=\"flex flex-col gap-6\">",
-      "css_selector": ".flex",
+      "css_selector": "div.flex.gap-6",
       "bounding_box": {
         "x": 304,
-        "y": 194,
+        "y": 750,
         "width": 672,
         "height": 368
       }
@@ -25,12 +25,12 @@
       "line_number": 25,
       "clean_code": "className=\"w-20 h-20 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-3xl shadow-lg hover:bg-green-200 hover:shadow-xl transition transform hover:scale-110 active:scale-95\"",
       "buggy_code": "className=\"w-20 h-20 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-3xl shadow-lg hover:bg-green-200 hover:shadow-xl transition transform hover:scale-110 active:scale-95 -mt-16\"",
-      "css_selector": ".hover:scale-110",
+      "css_selector": ".w-20.h-20.rounded-full.bg-green-100",
       "bounding_box": {
         "x": 600,
-        "y": 792,
+        "y": 770,
         "width": 80,
-        "height": 80
+        "height": 110
       }
     },
     {
@@ -41,12 +41,12 @@
       "line_number": 5,
       "clean_code": "<div className=\"absolute inset-0 bg-white rounded-2xl shadow-xl transform rotate-6 translate-x-4 border border-gray-200 flex items-center justify-center\">",
       "buggy_code": "<div className=\"absolute inset-0 bg-white rounded-2xl shadow-xl transform rotate-6 translate-x-4 border border-gray-200 flex items-center justify-center z-50\">",
-      "css_selector": ".rotate-6",
+      "css_selector": ".absolute.inset-0.rotate-6",
       "bounding_box": {
         "x": 477,
         "y": 216,
         "width": 358,
-        "height": 415
+        "height": 500
       }
     },
     {
@@ -57,7 +57,7 @@
       "line_number": 18,
       "clean_code": "className=\"absolute inset-0 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-between transform transition-all duration-500 hover:shadow-3xl cursor-pointer z-10 hover:scale-105 border border-gray-100\"",
       "buggy_code": "className=\"absolute inset-0 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-between transform transition-all duration-500 hover:shadow-3xl cursor-pointer z-10 hover:scale-105 border border-gray-100 -mb-12\"",
-      "css_selector": ".hover:scale-105",
+      "css_selector": ".absolute.inset-0.bg-gradient-to-br.z-10",
       "bounding_box": {
         "x": 480,
         "y": 232,
@@ -73,7 +73,7 @@
       "line_number": 5,
       "clean_code": "<h1 className=\"text-white text-5xl font-bold mb-2 tracking-tight\">{title}</h1>",
       "buggy_code": "<h1 className=\"text-white text-5xl font-bold mb-2 tracking-tight from-emerald-8\">",
-      "css_selector": "h1",
+      "css_selector": "h1.text-white.text-5xl.font-bold.mb-2.tracking-tight",
       "bounding_box": {
         "x": 304,
         "y": 58,
@@ -89,12 +89,12 @@
       "line_number": 15,
       "clean_code": "<div className=\"bg-white rounded-3xl shadow-2xl p-10 max-w-lg w-full mx-4\">",
       "buggy_code": "<div className=\"bg-white rounded-3xl shadow-2xl p-10 max-w-lg w-full mx-4 absolute -top-64\">",
-      "css_selector": ".shadow-2xl",
+      "css_selector": ".bg-white.rounded-3xl.shadow-2xl.p-10",
       "bounding_box": {
-        "x": 480,
-        "y": 232,
-        "width": 320,
-        "height": 432
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 720
       }
     },
     {
@@ -105,11 +105,11 @@
       "line_number": 55,
       "clean_code": "<p className=\"text-blue-900 font-semibold text-sm\">Total cards reviewed: <span className=\"text-blue-600 font-bold\">{total}</span></p>",
       "buggy_code": "<p className=\"text-white font-semibold text-sm\">Total cards reviewed: <span className=\"text-white font-bold\">{total}</span></p>",
-      "css_selector": ".text-blue-900",
+      "css_selector": ".bg-blue-50.rounded-xl.p-4 > p:first-child",
       "bounding_box": {
         "x": 444,
         "y": 223,
-        "width": 396,
+        "width": 320,
         "height": 20
       }
     },
@@ -121,11 +121,11 @@
       "line_number": 56,
       "clean_code": "<p className=\"text-blue-800 text-xs mt-2\">Keep practicing to master these topics!</p>",
       "buggy_code": "<p className=\"text-white text-xs mt-2\">Keep practicing to master these topics!</p>",
-      "css_selector": ".text-blue-800",
+      "css_selector": ".bg-blue-50.rounded-xl.p-4 > p:last-child",
       "bounding_box": {
         "x": 444,
         "y": 251,
-        "width": 396,
+        "width": 320,
         "height": 16
       }
     },
@@ -137,10 +137,10 @@
       "line_number": 5,
       "clean_code": "<p className=\"text-4xl font-bold text-green-400 mb-1\">{correct}</p>",
       "buggy_code": "<p className=\"text-4xll font-bold text-green-400 mb-1\">{correct}</p>",
-      "css_selector": ".text-4xll",
+      "css_selector": "p.font-bold.text-green-400",
       "bounding_box": {
         "x": 500,
-        "y": 912,
+        "y": 550,
         "width": 46,
         "height": 24
       }
@@ -153,10 +153,10 @@
       "line_number": 12,
       "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-6 mb-8\">",
       "buggy_code": "<div className=\"grid grid-cols-5 gap-6 mb-8\">",
-      "css_selector": ".grid-cols-1",
+      "css_selector": "div.grid.gap-6.mb-8",
       "bounding_box": {
         "x": 304,
-        "y": 194,
+        "y": 120,
         "width": 672,
         "height": 368
       }
