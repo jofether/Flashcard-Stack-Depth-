@@ -10,7 +10,7 @@
       "line_number": 3,
       "neg_code": "<div className=\"flex gap-6\">",
       "pos_code": "<div className=\"flex flex-col gap-6\">",
-      "css_selector": "div.flex.gap-6",
+      "css_selector": "div:has(> button)",
       "bounding_box": {
         "x": 304,
         "y": 750,
@@ -27,7 +27,7 @@
       "line_number": 25,
       "neg_code": "className=\"w-20 h-20 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-3xl shadow-lg hover:bg-green-200 hover:shadow-xl transition transform hover:scale-110 active:scale-95\"",
       "pos_code": "className=\"w-20 h-20 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-3xl shadow-lg hover:bg-green-200 hover:shadow-xl transition transform hover:scale-110 active:scale-95 -mt-16\"",
-      "css_selector": ".w-20.h-20.rounded-full.bg-green-100",
+      "css_selector": "button:nth-of-type(3)",
       "bounding_box": {
         "x": 600,
         "y": 770,
@@ -44,7 +44,7 @@
       "line_number": 5,
       "neg_code": "<div className=\"absolute inset-0 bg-white rounded-2xl shadow-xl transform rotate-6 translate-x-4 border border-gray-200 flex items-center justify-center\">",
       "pos_code": "<div className=\"absolute inset-0 bg-white rounded-2xl shadow-xl transform rotate-6 translate-x-4 border border-gray-200 flex items-center justify-center z-50\">",
-      "css_selector": ".absolute.inset-0.rotate-6",
+      "css_selector": "div.relative > div:nth-child(1)",
       "bounding_box": {
         "x": 477,
         "y": 216,
@@ -61,7 +61,7 @@
       "line_number": 18,
       "neg_code": "className=\"absolute inset-0 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-between transform transition-all duration-500 hover:shadow-3xl cursor-pointer z-10 hover:scale-105 border border-gray-100\"",
       "pos_code": "className=\"absolute inset-0 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-2xl p-8 flex flex-col items-center justify-between transform transition-all duration-500 hover:shadow-3xl cursor-pointer z-10 hover:scale-105 border border-gray-100 -mb-12\"",
-      "css_selector": ".absolute.inset-0.bg-gradient-to-br.z-10",
+      "css_selector": "div.relative > div:nth-child(3)",
       "bounding_box": {
         "x": 480,
         "y": 232,
@@ -78,7 +78,7 @@
       "line_number": 5,
       "neg_code": "<h1 className=\"text-white text-5xl font-bold mb-2 tracking-tight\">{title}</h1>",
       "pos_code": "<h1 className=\"text-white text-5xl font-bold mb-2 tracking-tight from-emerald-8\">",
-      "css_selector": "h1.text-white.text-5xl.font-bold.mb-2.tracking-tight",
+      "css_selector": "h1",
       "bounding_box": {
         "x": 304,
         "y": 58,
@@ -95,7 +95,7 @@
       "line_number": 15,
       "neg_code": "<div className=\"bg-white rounded-3xl shadow-2xl p-10 max-w-lg w-full mx-4\">",
       "pos_code": "<div className=\"bg-white rounded-3xl shadow-2xl p-10 max-w-lg w-full mx-4 absolute -top-64\">",
-      "css_selector": ".bg-white.rounded-3xl.shadow-2xl.p-10",
+      "css_selector": "div > div:nth-child(1) > h2",
       "bounding_box": {
         "x": 0,
         "y": 0,
@@ -112,7 +112,7 @@
       "line_number": 55,
       "neg_code": "<p className=\"text-blue-900 font-semibold text-sm\">Total cards reviewed: <span className=\"text-blue-600 font-bold\">{total}</span></p>",
       "pos_code": "<p className=\"text-white font-semibold text-sm\">Total cards reviewed: <span className=\"text-white font-bold\">{total}</span></p>",
-      "css_selector": ".bg-blue-50.rounded-xl.p-4 > p:first-child",
+      "css_selector": "div > div:last-child > p:first-of-type",
       "bounding_box": {
         "x": 444,
         "y": 223,
@@ -129,7 +129,7 @@
       "line_number": 56,
       "neg_code": "<p className=\"text-blue-800 text-xs mt-2\">Keep practicing to master these topics!</p>",
       "pos_code": "<p className=\"text-white text-xs mt-2\">Keep practicing to master these topics!</p>",
-      "css_selector": ".bg-blue-50.rounded-xl.p-4 > p:last-child",
+      "css_selector": "div > div:last-child > p:last-of-type",
       "bounding_box": {
         "x": 444,
         "y": 251,
@@ -146,7 +146,7 @@
       "line_number": 5,
       "neg_code": "<p className=\"text-4xl font-bold text-green-400 mb-1\">{correct}</p>",
       "pos_code": "<p className=\"text-4xll font-bold text-green-400 mb-1\">{correct}</p>",
-      "css_selector": "p.font-bold.text-green-400",
+      "css_selector": "p:first-of-type",
       "bounding_box": {
         "x": 500,
         "y": 550,
@@ -163,7 +163,7 @@
       "line_number": 12,
       "neg_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-6 mb-8\">",
       "pos_code": "<div className=\"grid grid-cols-5 gap-6 mb-8\">",
-      "css_selector": "div.grid.gap-6.mb-8",
+      "css_selector": "div:nth-child(3)",
       "bounding_box": {
         "x": 304,
         "y": 120,
